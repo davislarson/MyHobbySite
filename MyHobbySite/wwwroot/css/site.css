@@ -20,3 +20,23 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+.cover-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; /* Space between items */
+}
+
+.cover {
+  width: calc(25% - 10px); /* Ensure four items per row */
+  max-width: 200px; /* Optional: Limit image width */
+}
+
+.cover img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove bottom gap */
+  border-radius: 8px; /* Optional */
+}
