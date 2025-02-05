@@ -2,10 +2,10 @@
 // for details on configuring this project to bundle and minify static web assets.
 $(document).ready(function() {
     $("#calculate").click(function() {
-        let hours = $("#hours").val();
-        let rate = 25.5; // Fixed hourly rate
+        let hours = parseFloat($("#hours").val());
+        let rate = parseFloat($("#rate").val()) // Fixed hourly rate from the html page
 
-        if (hours <= 0 || isNaN(hours)) {
+        if (hours < 0 || isNaN(hours)) {
             alert("Please enter a valid positive number of hours.");
             return;
         }
